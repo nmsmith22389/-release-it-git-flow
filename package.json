@@ -1,0 +1,41 @@
+{
+    "name": "release-it-git-flow",
+    "private": true,
+    "version": "0.1.0",
+    "description": "A release-it plugin to create git-flow releases",
+    "main": "index.js",
+    "scripts": {
+        "test": "ava test.js --verbose",
+        "release": "release-it"
+    },
+    "keywords": [
+        "release",
+        "release-it",
+        "release-it-plugin"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nmsmith22389/release-it-git-flow.git"
+    },
+    "homepage": "https://github.com/nmsmith22389/release-it-git-flow#readme",
+    "bugs": "https://github.com/nmsmith22389/release-it-git-flow/issues",
+    "author": "Neil Smith",
+    "dependencies": {
+        "release-it": "^12.0.1"
+    },
+    "devDependencies": {
+        "ava": "^1.4.1",
+        "sinon": "^7.3.2"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "release-it": {
+        "plugins": {
+            "./": {
+                "a": "b"
+            }
+        }
+    }
+}
